@@ -5,9 +5,9 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>org.webapp</groupId>
-  <artifactId>demo</artifactId>
+  <artifactId>Servelet-demo</artifactId>
   <version>1.0-SNAPSHOT</version>
-  <name>demo</name>
+  <name>Servelet-demo</name>
   <packaging>war</packaging>
 
   <properties>
