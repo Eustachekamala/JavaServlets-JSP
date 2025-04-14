@@ -21,16 +21,17 @@ public class PresidentServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        List<President> presidents = new ArrayList<>();
-
-        presidents.add(new President("George Washington", "images/georges.jpeg"));
-        presidents.add(new President("John Adams", "images/john.jpeg"));
-        presidents.add(new President("Thomas Jefferson", "images/thomas.jpeg"));
-        presidents.add(new President("Abraham Lincoln", "images/abraham.jpeg"));
-        presidents.add(new President("Theodore Roosevelt", "images/theodore.jpeg"));
-        presidents.add(new President("Barack Obama", "images/barack.jpeg"));
-
+        List<President> presidents = List.of(
+                new President("George Washington", "images/georges.jpeg"),
+                new President("John Adams", "images/john.jpeg"),
+                new President("Thomas Jefferson", "images/thomas.jpeg"),
+                new President("Abraham Lincoln", "images/abraham.jpeg"),
+                new President("Theodore Roosevelt", "images/theodore.jpeg"),
+                new President("Barack Obama", "images/barack.jpeg")
+        );
         req.setAttribute("presidents", presidents);
         req.getServletContext().getRequestDispatcher("/president.jsp").forward(req, resp);
+
+        resp.sendRedirect("/secondary");
     }
 }
