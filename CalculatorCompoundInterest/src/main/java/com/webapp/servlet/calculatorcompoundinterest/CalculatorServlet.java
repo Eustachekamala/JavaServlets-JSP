@@ -36,6 +36,11 @@ public class CalculatorServlet extends HttpServlet {
                 req.setAttribute("error", error);
             }
         }
+        req.setAttribute("principalAmount", principalAmount);
+        req.setAttribute("interestPercentage", interestPercentage);
+        req.setAttribute("years", years);
+        req.setAttribute("compoundingPeriod", compoundingPeriod);
+
         getServletContext().getRequestDispatcher("/index.jsp").forward(req, resp);
     }
 

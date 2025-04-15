@@ -14,22 +14,22 @@
     <form action="/" method="post" class="space-y-4">
         <div>
             <label for="principalAmount" class="block text-sm font-medium text-gray-700">Principal Amount <span class="text-gray-500">$</span></label>
-            <input type="number" id="principalAmount" name="principalAmount" placeholder="${principalAmount}"
+            <input type="number" id="principalAmount" name="principalAmount" placeholder="${principalAmount}" value="${principalAmount}"
                    class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
         </div>
         <div>
             <label for="interestPercentage" class="block text-sm font-medium text-gray-700">Annual Interest Rate (%)</label>
-            <input type="number" id="interestPercentage" name="interestPercentage" step="0.01" placeholder="${interestPercentage}" min="1" max="100"
+            <input type="number" id="interestPercentage" name="interestPercentage" step="0.01" placeholder="${interestPercentage}" min="1" max="100" value="${interestPercentage}"
                    class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
         </div>
         <div>
             <label for="years" class="block text-sm font-medium text-gray-700">Time per Year <span class="text-gray-500">(1 to 12)</span></label>
-            <input type="number" id="years" name="years" placeholder="${years}" min="1" max="12"
+            <input type="number" id="years" name="years" placeholder="${years}" min="1" max="12" value="${years}"
                    class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
         </div>
         <div>
             <label for="compoundingPeriod" class="block text-sm font-medium text-gray-700">Compounding Frequency (per year)</label>
-            <input type="number" id="compoundingPeriod" name="compoundingPeriod" placeholder="${compoundingPeriod}"
+            <input type="number" id="compoundingPeriod" name="compoundingPeriod" placeholder="${compoundingPeriod}" value="${compoundingPeriod}"
                    class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
         </div>
         <button type="submit"
